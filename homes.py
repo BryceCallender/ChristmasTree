@@ -1,17 +1,9 @@
 from tree import RGBXmasTree
-import random
+from colorzero import Color
 
 tree = RGBXmasTree()
 
-def random_color():
-    r = random.random()
-    g = random.random()
-    b = random.random()
-    return (r, g, b)
-
 try:
-    while True:
-        pixel = random.choice(tree)
-        pixel.color = random_color()
+    tree.color = Color('orange')
 except KeyboardInterrupt:
     tree.close()
