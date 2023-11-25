@@ -14,4 +14,5 @@ try:
         pixel = random.choice(tree)
         pixel.color = random_color()
 except KeyboardInterrupt:
+    tree.off()
     tree.close()
