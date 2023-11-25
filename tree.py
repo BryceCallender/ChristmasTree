@@ -35,7 +35,7 @@ class Pixel:
 
 
 class RGBXmasTree(SourceMixin, SPIDevice):
-    def __init__(self, pixels=25, brightness=0.1, mosi_pin=12, clock_pin=25, *args, **kwargs):
+    def __init__(self, pixels=25, brightness=0.01, mosi_pin=12, clock_pin=25, *args, **kwargs):
         super(RGBXmasTree, self).__init__(mosi_pin=mosi_pin, clock_pin=clock_pin, *args, **kwargs)
         self._all = [Pixel(parent=self, index=i) for i in range(pixels)]
         self._value = [(0, 0, 0)] * pixels
