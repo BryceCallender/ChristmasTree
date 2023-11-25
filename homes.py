@@ -4,6 +4,6 @@ from colorzero import Color
 tree = RGBXmasTree()
 
 try:
-    tree.color = Color('orange')
+    tree.color = Color('blue')
 except KeyboardInterrupt:
     tree.close()
