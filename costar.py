@@ -4,7 +4,7 @@ import random
 
 tree = RGBXmasTree()
 
-costar_colors = [Color('red'), Color('blue'), Color('green'), Color.from_hsv(11, 0.80, 0.60)]
+costar_colors = [Color('red'), Color('blue'), Color('green'), Color('#FF5733')]
 
 try:
     while True:
